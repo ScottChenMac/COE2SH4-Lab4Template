@@ -6,26 +6,38 @@ class Matrix {
 
 	public:
 
-		Matrix();
-		~Matrix();
+		// Default Constructor
+		Matrix();		
+
+		// Additional Constructors
 		Matrix( int row, int col );
 		Matrix( int row, int col, int **table );
 
+		// Do you think you need a Destructor?  Why or why not?
+		
+
+		// Getters
 		int getElement(int i, int j);
-		bool setElement(int x, int i, int j);
 		int getsizeofrows();
 		int getsizeofcols();
 
-		Matrix copy();
-		void addTo( Matrix m );
-		Matrix subMatrix(int i, int j);
-		string toString();
+		// Setters
+		bool setElement(int x, int i, int j);
+
+		// Other Member Functions
+		Matrix copy();						// Create a Copy of This Matrix
+		void addTo( Matrix m );				// Add Matrix m to this matrix
+		Matrix subMatrix(int i, int j);     // Obtain the upper-left submatrix of this matrix
+		string toString();					// String Conversion Method
 
 
 	private:
 
+		// Stack Data Members
 		int    rowsNum;
 		int    colsNum;
+
+		// Heap Data Members - Do you need to release them?  Where, when, and how?
 		int    **matrixData;
 
 };
