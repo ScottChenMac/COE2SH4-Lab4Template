@@ -89,6 +89,27 @@ int Matrix::getElement(int i, int j)
 }
 
 
+int Matrix::getsizeofrows(){
+
+	// Getter - Return the row size of this matrix
+
+	// IMPLEMENT YOUR CODE BELOW
+
+
+
+}
+
+
+int Matrix::getsizeofcols(){
+
+	// Getter - Return the column size of this matrix
+    
+	// IMPLEMENT YOUR CODE BELOW
+
+
+
+
+}
 
 bool Matrix::setElement(int x, int i, int j){
 
@@ -121,7 +142,7 @@ Matrix Matrix::copy(){
 	// 3. Return the instance of the Matrix
 
 	// However, the implementation is faulty with two semantic bugs.
-	// They are commented out by default so to not affect your other development tasks.
+	// The code is commented out by default so to not affect your other development tasks.
 
 	// [TODO]: Uncomment the code block below, then debug!
 	/* fix the code using GDB Debugger, and produce a simple debugging report*/
@@ -130,7 +151,7 @@ Matrix Matrix::copy(){
 	/* UNCOMMENT THIS SECTION, THEN DEBUG! */
 	
 	/*
-	Matrix copy =  Matrix();
+	Matrix copy = Matrix();
 
 	for(int i = 0; i < rowsNum; i++)
 		for(int j = 0; j < colsNum; j++)
@@ -197,27 +218,6 @@ Matrix Matrix::subMatrix(int i, int j){
 }
 
 
-int Matrix::getsizeofrows(){
-
-	// Getter - Return the row size of this matrix
-
-	// IMPLEMENT YOUR CODE BELOW
-
-
-
-}
-
-
-int Matrix::getsizeofcols(){
-
-	// Getter - Return the column size of this matrix
-    
-	// IMPLEMENT YOUR CODE BELOW
-
-
-
-
-}
 
 
 
