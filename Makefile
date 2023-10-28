@@ -1,9 +1,9 @@
 CC=g++
-CFLAGS=-I. -lm
+CFLAGS=-I. -lm -g
 DEPS = *.h
 OBJ = Test.o Matrix.o 
 
-%.o: %.c $(DEPS)
+%.o: %.cpp $(DEPS)
 	$(CC) -c -o $@ $< $(CFLAGS)
 
 Lab4: $(OBJ)
