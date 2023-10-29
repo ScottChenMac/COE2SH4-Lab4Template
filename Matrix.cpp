@@ -145,7 +145,7 @@ Matrix Matrix::copy(){
 	// The code is commented out by default so to not affect your other development tasks.
 
 	// [TODO]: Uncomment the code block below, then debug!
-	/* fix the code using GDB Debugger, and produce a simple debugging report*/
+	/* fix the code using GDB Debugger or Debugging Message Printout using cout, and produce a simple debugging report*/
 
 	/* UNCOMMENT THIS SECTION, THEN DEBUG! */
 	/* UNCOMMENT THIS SECTION, THEN DEBUG! */
